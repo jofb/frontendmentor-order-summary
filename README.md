@@ -2,9 +2,7 @@
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
-## Table of contents
-
--   [Built with](#built-with)
+I mainly used this project to practice and learn SCSS.
 
 ### Built with
 
