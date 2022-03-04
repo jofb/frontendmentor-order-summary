@@ -1,0 +1,221 @@
+* {
+  font-family: "Red Hat Display", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #e0e8ff;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  background: white;
+  max-width: 25rem;
+  margin: 4rem;
+  -webkit-box-shadow: 0 1.5rem 1.5rem rgba(114, 128, 167, 0.2);
+          box-shadow: 0 1.5rem 1.5rem rgba(114, 128, 167, 0.2);
+}
+
+.hero {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.summary h1 {
+  color: #1f2f56;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.75rem;
+}
+
+.summary p {
+  color: #7280a7;
+  text-align: center;
+  padding: auto 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f5f7ff;
+  border-radius: 1rem;
+  width: 80%;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.plan .change {
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  border: none;
+  background: transparent;
+  color: #3829e0;
+}
+
+.plan .change:hover {
+  opacity: 0.7;
+}
+
+.iconText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iconText div {
+  padding-left: 1rem;
+}
+
+.iconText div h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+.iconText div p {
+  color: #7280a7;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+  width: 80%;
+}
+
+.buttons button {
+  margin: 0.3rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.buttons .payment {
+  color: white;
+  background: #3829e0;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 0.5rem 1.7rem rgba(31, 47, 86, 0.4);
+          box-shadow: 0 0.5rem 1.7rem rgba(31, 47, 86, 0.4);
+}
+
+.buttons .payment:hover {
+  opacity: 0.7;
+}
+
+.buttons .cancel {
+  color: #7280a7;
+  background: transparent;
+  border: none;
+}
+
+.buttons .cancel:hover {
+  color: #1f2f56;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+/*# sourceMappingURL=style.css.map */

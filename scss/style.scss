@@ -1,0 +1,135 @@
+@import "variables";
+
+// Mixins
+@mixin flex-center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    font-family: $font-stack;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+body {
+    @include flex-center(column);
+    justify-content: space-between;
+    background-color: $pale-blue;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.container {
+    @include flex-center(column);
+    border-radius: 1rem;
+    background: white;
+    max-width: 25rem;
+    margin: 4rem;
+    box-shadow: 0 1.5rem 1.5rem rgba($desaturated-blue, 0.2);
+}
+.hero {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.summary {
+    @include flex-center(column);
+    width: 80%;
+
+    h1 {
+        color: $dark-blue;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0.75rem;
+    }
+
+    p {
+        color: $desaturated-blue;
+        text-align: center;
+        padding: auto 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+.plan {
+    @include flex-center(row);
+    justify-content: space-between;
+    background-color: $very-pale-blue;
+    border-radius: 1rem;
+    width: 80%;
+    padding: 1rem;
+    margin: 0.5rem;
+
+    .change {
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: underline;
+        border: none;
+        background: transparent;
+        color: $bright-blue;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+.iconText {
+    @include flex-center(row);
+    justify-content: space-between;
+
+    div {
+        padding-left: 1rem;
+        h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: $dark-blue;
+        }
+
+        p {
+            color: $desaturated-blue;
+        }
+    }
+}
+.buttons {
+    @include flex-center(column);
+    justify-content: space-between;
+    margin: 1rem;
+    width: 80%;
+
+    button {
+        margin: 0.3rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+        width: 100%;
+        cursor: pointer;
+    }
+    .payment {
+        color: white;
+        background: $bright-blue;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 0.5rem 1.7rem rgba($dark-blue, 0.4);
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .cancel {
+        color: $desaturated-blue;
+        background: transparent;
+        border: none;
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+}
